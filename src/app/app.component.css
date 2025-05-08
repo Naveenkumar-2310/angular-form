@@ -1,0 +1,73 @@
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.genderClass {
+  display: flex;
+  align-items: center;
+}
+
+::ng-deep .cdk-overlay-pane .mat-mdc-select-panel {
+  background-color: white !important;
+}
+
+::ng-deep .mat-text-field{
+    padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.addressClass,
+.checkBoxId {
+  grid-column: span 2;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.btnId {
+ grid-column: span 2;   
+ display: flex;
+ gap: 50px;
+ margin: 0 auto;
+}
+
+button[type="submit"]{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+button[type="reset"]{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.mdc-text-field .mat-mdc-text-field-wrapper  {
+  padding: 0px 7px;
+}
