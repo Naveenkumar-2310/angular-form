@@ -174,7 +174,7 @@
         >
           Same as Communication Address
         </mat-checkbox>
-        <mat-error *ngIf="comAddressError && sameAddress">*Please Enter Communication Address</mat-error>
+        <mat-error *ngIf="comAddressError || sameAddress">*Please Enter Communication Address</mat-error>
       </div>
     </div>
 
